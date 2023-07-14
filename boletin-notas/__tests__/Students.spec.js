@@ -10,15 +10,15 @@ describe('Students', () => {
   expect(wrapper.find('main').exists()).toBe(true)
 })
 
- test ('Testear si el atributo "class" de la etiquetas html es la que tiene que ser', () =>{
-  const wrapper = mount(Students)
-  expect(wrapper.find('.container').exists()).toBe(true)
+  test ('Testear si el atributo "class" de la etiquetas html es la que tiene que ser', () =>{
+    const wrapper = mount(Students)
+    expect(wrapper.find('.container').exists()).toBe(true)
   })
 
   test ('Testear si el atributo "class" de la etiquetas html es la que tiene que ser', () =>{
     const wrapper = mount(Students)
     expect(wrapper.find('#idContainer').exists()).toBe(true)
-    })
+  })
   
   test('El componente recibe props que pueda recibir datos', () => {
     const wrapper = mount(Students,{
